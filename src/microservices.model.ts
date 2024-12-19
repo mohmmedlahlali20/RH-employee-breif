@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
                     transport: Transport.TCP,
                     options: {
                         host: process.env.SERVICE_1_HOST || 'localhost',
-                        port: parseInt(process.env.SERVICE_1_PORT, 10) || 3000,
+                        port: parseInt(process.env.SERVICE_1_PORT, 10) || 3333,
                     },
                 });
             },
@@ -23,7 +23,7 @@ import { ConfigModule } from '@nestjs/config';
                     transport: Transport.TCP,
                     options: {
                         host: process.env.SERVICE_2_HOST || 'localhost',
-                        port: parseInt(process.env.SERVICE_2_PORT, 10) || 4000,
+                        port: parseInt(process.env.SERVICE_2_PORT, 10) || 2222,
                     },
                 });
             },
@@ -35,7 +35,7 @@ import { ConfigModule } from '@nestjs/config';
                     transport: Transport.TCP,
                     options: {
                         host: process.env.SERVICE_3_HOST || 'localhost',
-                        port: parseInt(process.env.SERVICE_3_PORT, 10) || 5000,
+                        port: parseInt(process.env.SERVICE_3_PORT, 10) || 1111,
                     },
                 });
             },
